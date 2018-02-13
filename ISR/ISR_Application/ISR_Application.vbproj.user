@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>\\202.141.239.194\c%24\Inetpub\wwwroot\Publish_ISR_Application\|\\202.141.239.194\c%24\Inetpub\wwwroot\ISR_Application\|publish\</PublishUrlHistory>
+    <InstallUrlHistory>http://202.141.239.194/Publish_ISR_Application/|http://isr.apps.multi.net.pk/|http://isr.apps.multi.net.pk/Publish_ISR_Application/|http://202.141.239.194/ISR_Application/|http://202.141.239.194/new_bss_app/</InstallUrlHistory>
+    <SupportUrlHistory>http://isr.apps.multi.net.pk/|http://isr.apps.multi.net.pk</SupportUrlHistory>
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>

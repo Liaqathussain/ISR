@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthenticateUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthenticateUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthenticateUserResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAppUsers">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAppUsersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAppUsersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQueryType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="QueryMainTypeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQueryTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetQueryTypeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMainQueryType">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMainQueryTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMainQueryTypeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRecivedFrom">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetRecivedFromResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRecivedFromResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStatus">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStatusResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetComplainMode">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetComplainModeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetComplainModeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertIncident">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IncidentID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="StartDateTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="ComplainModeID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="QueryTypeID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Category" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Initiator" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="RecivedFromID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="StatusID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ClosedByID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="CloseDateTime" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="Aging" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Remarks" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="TransactionBy" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertIncidentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertIncidentResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIncidentReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClosedByID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ComplainModeID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="QueryTypeID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RecivedFromID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="StatusID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="CloseDateTimeFrom" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="CloseDateTimeTO" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIncidentReportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIncidentReportResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIncidentDetailByIncidentID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IncidentID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIncidentDetailByIncidentIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIncidentDetailByIncidentIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateIncident">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IncidentID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="StartDateTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="ComplainModeID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="QueryTypeID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Category" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Initiator" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="RecivedFromID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="StatusID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ClosedByID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="CloseDateTime" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="Aging" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Remarks" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="TransactionBy" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateIncidentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateIncidentResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRemarksHistoryByIncidentID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IncidentID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRemarksHistoryByIncidentIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRemarksHistoryByIncidentIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="AuthenticateUserSoapIn">
+    <wsdl:part name="parameters" element="tns:AuthenticateUser" />
+  </wsdl:message>
+  <wsdl:message name="AuthenticateUserSoapOut">
+    <wsdl:part name="parameters" element="tns:AuthenticateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAppUsersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAppUsers" />
+  </wsdl:message>
+  <wsdl:message name="GetAppUsersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAppUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetQueryTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetQueryType" />
+  </wsdl:message>
+  <wsdl:message name="GetQueryTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetQueryTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMainQueryTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMainQueryType" />
+  </wsdl:message>
+  <wsdl:message name="GetMainQueryTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMainQueryTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRecivedFromSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRecivedFrom" />
+  </wsdl:message>
+  <wsdl:message name="GetRecivedFromSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRecivedFromResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetComplainModeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetComplainMode" />
+  </wsdl:message>
+  <wsdl:message name="GetComplainModeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetComplainModeResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertIncidentSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertIncident" />
+  </wsdl:message>
+  <wsdl:message name="InsertIncidentSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertIncidentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIncidentReportSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIncidentReport" />
+  </wsdl:message>
+  <wsdl:message name="GetIncidentReportSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIncidentReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIncidentDetailByIncidentIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIncidentDetailByIncidentID" />
+  </wsdl:message>
+  <wsdl:message name="GetIncidentDetailByIncidentIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIncidentDetailByIncidentIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateIncidentSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateIncident" />
+  </wsdl:message>
+  <wsdl:message name="UpdateIncidentSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateIncidentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRemarksHistoryByIncidentIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRemarksHistoryByIncidentID" />
+  </wsdl:message>
+  <wsdl:message name="GetRemarksHistoryByIncidentIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRemarksHistoryByIncidentIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISR_ServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateUser">
+      <wsdl:input message="tns:AuthenticateUserSoapIn" />
+      <wsdl:output message="tns:AuthenticateUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppUsers">
+      <wsdl:input message="tns:GetAppUsersSoapIn" />
+      <wsdl:output message="tns:GetAppUsersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryType">
+      <wsdl:input message="tns:GetQueryTypeSoapIn" />
+      <wsdl:output message="tns:GetQueryTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMainQueryType">
+      <wsdl:input message="tns:GetMainQueryTypeSoapIn" />
+      <wsdl:output message="tns:GetMainQueryTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRecivedFrom">
+      <wsdl:input message="tns:GetRecivedFromSoapIn" />
+      <wsdl:output message="tns:GetRecivedFromSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <wsdl:input message="tns:GetStatusSoapIn" />
+      <wsdl:output message="tns:GetStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetComplainMode">
+      <wsdl:input message="tns:GetComplainModeSoapIn" />
+      <wsdl:output message="tns:GetComplainModeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertIncident">
+      <wsdl:input message="tns:InsertIncidentSoapIn" />
+      <wsdl:output message="tns:InsertIncidentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIncidentReport">
+      <wsdl:input message="tns:GetIncidentReportSoapIn" />
+      <wsdl:output message="tns:GetIncidentReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIncidentDetailByIncidentID">
+      <wsdl:input message="tns:GetIncidentDetailByIncidentIDSoapIn" />
+      <wsdl:output message="tns:GetIncidentDetailByIncidentIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIncident">
+      <wsdl:input message="tns:UpdateIncidentSoapIn" />
+      <wsdl:output message="tns:UpdateIncidentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRemarksHistoryByIncidentID">
+      <wsdl:input message="tns:GetRemarksHistoryByIncidentIDSoapIn" />
+      <wsdl:output message="tns:GetRemarksHistoryByIncidentIDSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ISR_ServiceSoap" type="tns:ISR_ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateUser">
+      <soap:operation soapAction="http://tempuri.org/AuthenticateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppUsers">
+      <soap:operation soapAction="http://tempuri.org/GetAppUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryType">
+      <soap:operation soapAction="http://tempuri.org/GetQueryType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMainQueryType">
+      <soap:operation soapAction="http://tempuri.org/GetMainQueryType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecivedFrom">
+      <soap:operation soapAction="http://tempuri.org/GetRecivedFrom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <soap:operation soapAction="http://tempuri.org/GetStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetComplainMode">
+      <soap:operation soapAction="http://tempuri.org/GetComplainMode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIncident">
+      <soap:operation soapAction="http://tempuri.org/InsertIncident" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIncidentReport">
+      <soap:operation soapAction="http://tempuri.org/GetIncidentReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIncidentDetailByIncidentID">
+      <soap:operation soapAction="http://tempuri.org/GetIncidentDetailByIncidentID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIncident">
+      <soap:operation soapAction="http://tempuri.org/UpdateIncident" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRemarksHistoryByIncidentID">
+      <soap:operation soapAction="http://tempuri.org/GetRemarksHistoryByIncidentID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ISR_ServiceSoap12" type="tns:ISR_ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateUser">
+      <soap12:operation soapAction="http://tempuri.org/AuthenticateUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppUsers">
+      <soap12:operation soapAction="http://tempuri.org/GetAppUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryType">
+      <soap12:operation soapAction="http://tempuri.org/GetQueryType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMainQueryType">
+      <soap12:operation soapAction="http://tempuri.org/GetMainQueryType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecivedFrom">
+      <soap12:operation soapAction="http://tempuri.org/GetRecivedFrom" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <soap12:operation soapAction="http://tempuri.org/GetStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetComplainMode">
+      <soap12:operation soapAction="http://tempuri.org/GetComplainMode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIncident">
+      <soap12:operation soapAction="http://tempuri.org/InsertIncident" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIncidentReport">
+      <soap12:operation soapAction="http://tempuri.org/GetIncidentReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIncidentDetailByIncidentID">
+      <soap12:operation soapAction="http://tempuri.org/GetIncidentDetailByIncidentID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIncident">
+      <soap12:operation soapAction="http://tempuri.org/UpdateIncident" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRemarksHistoryByIncidentID">
+      <soap12:operation soapAction="http://tempuri.org/GetRemarksHistoryByIncidentID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ISR_Service">
+    <wsdl:port name="ISR_ServiceSoap" binding="tns:ISR_ServiceSoap">
+      <soap:address location="http://localhost:16458/ISR_Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ISR_ServiceSoap12" binding="tns:ISR_ServiceSoap12">
+      <soap12:address location="http://localhost:16458/ISR_Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

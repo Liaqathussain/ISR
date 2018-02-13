@@ -1,0 +1,26 @@
+E:\Sami Abbas\Multinet Project\ISR\ISR\ISR_WebService\bin\ISR_WebService.dll
+E:\Sami Abbas\Multinet Project\ISR\ISR\ISR_WebService\bin\ISR_WebService.pdb
+E:\Sami Abbas\Multinet Project\ISR\ISR\ISR_WebService\bin\ISR_WebService.xml
+E:\Sami Abbas\Multinet Project\ISR\ISR\ISR_WebService\obj\Debug\ISR_WebService.Resources.resources
+E:\Sami Abbas\Multinet Project\ISR\ISR\ISR_WebService\obj\Debug\ISR_WebService.vbproj.GenerateResource.Cache
+E:\Sami Abbas\Multinet Project\ISR\ISR\ISR_WebService\obj\Debug\ISR_WebService.dll
+E:\Sami Abbas\Multinet Project\ISR\ISR\ISR_WebService\obj\Debug\ISR_WebService.xml
+E:\Sami Abbas\Multinet Project\ISR\ISR\ISR_WebService\obj\Debug\ISR_WebService.pdb
+E:\Sami Abbas\Current Multinet Project\ISR\ISR\ISR_WebService\bin\ISR_WebService.dll
+E:\Sami Abbas\Current Multinet Project\ISR\ISR\ISR_WebService\bin\ISR_WebService.pdb
+E:\Sami Abbas\Current Multinet Project\ISR\ISR\ISR_WebService\bin\ISR_WebService.xml
+E:\Sami Abbas\Current Multinet Project\ISR\ISR\ISR_WebService\obj\Debug\ISR_WebService.Resources.resources
+E:\Sami Abbas\Current Multinet Project\ISR\ISR\ISR_WebService\obj\Debug\ISR_WebService.vbproj.GenerateResource.Cache
+E:\Sami Abbas\Current Multinet Project\ISR\ISR\ISR_WebService\obj\Debug\ISR_WebService.dll
+E:\Sami Abbas\Current Multinet Project\ISR\ISR\ISR_WebService\obj\Debug\ISR_WebService.xml
+E:\Sami Abbas\Current Multinet Project\ISR\ISR\ISR_WebService\obj\Debug\ISR_WebService.pdb
+E:\Sami Abbas\Current Multinet Project\ISR\ISR\ISR_WebService\bin\ISR_WebService.dll.config
+C:\Users\liaqat.hussain\Desktop\ISR\ISR\ISR_WebService\bin\ISR_WebService.dll.config
+C:\Users\liaqat.hussain\Desktop\ISR\ISR\ISR_WebService\bin\ISR_WebService.dll
+C:\Users\liaqat.hussain\Desktop\ISR\ISR\ISR_WebService\bin\ISR_WebService.pdb
+C:\Users\liaqat.hussain\Desktop\ISR\ISR\ISR_WebService\bin\ISR_WebService.xml
+C:\Users\liaqat.hussain\Desktop\ISR\ISR\ISR_WebService\obj\Debug\ISR_WebService.Resources.resources
+C:\Users\liaqat.hussain\Desktop\ISR\ISR\ISR_WebService\obj\Debug\ISR_WebService.vbproj.GenerateResource.Cache
+C:\Users\liaqat.hussain\Desktop\ISR\ISR\ISR_WebService\obj\Debug\ISR_WebService.dll
+C:\Users\liaqat.hussain\Desktop\ISR\ISR\ISR_WebService\obj\Debug\ISR_WebService.xml
+C:\Users\liaqat.hussain\Desktop\ISR\ISR\ISR_WebService\obj\Debug\ISR_WebService.pdb

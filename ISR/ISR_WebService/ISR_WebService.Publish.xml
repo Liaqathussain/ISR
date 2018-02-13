@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="E:\Sami Abbas\Publish Folders\Publish Folder ISR\Web Service" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="ISR" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/ISR_WebService.xml" publishTime="01/17/2017 14:37:57" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="01/01/2016 17:54:46" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="01/01/2016 17:54:46" />
+    <file relUrl="Web.config" publishTime="01/17/2017 14:37:57" />
+    <file relUrl="ISR_Service.asmx" publishTime="01/01/2016 17:57:16" />
+    <file relUrl="bin/ISR_WebService.pdb" publishTime="01/17/2017 14:37:57" />
+    <file relUrl="bin/ISR_WebService.dll" publishTime="01/17/2017 14:37:57" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="01/01/2016 17:54:46" />
+  </publishProfile>
+</publishData>
